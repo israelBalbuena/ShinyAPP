@@ -1,0 +1,40 @@
+
+########################################################################################
+########################################################################################
+########################################################################################
+
+MEXICO´S PUBLIC REVENUE SHINY APP
+
+# GOAL
+
+This Shiny Apps tries to show the relationship between the Mexico´s public revenue and the number of workers who ara enrolled at IMSS. Theoretically,  there is a directly proportional relationship between them:the more enrolled workers at IMSS, more public revenue the state catches.
+
+# DATA
+
+The database only contains four variables(features):
+
+  1.- fecha: day, month and year which IMSS published the data in its website.
+  2.- trabajadores: monthly number of workers enrolled at IMSS since 1997.
+  3.- ingreso: monthly public revenue got by the government since 1997 in pesos.
+  4.  inp = montly Consumer Price Index(PCI).
+  
+# HOW TO USE IT
+
+This shiny app is split on three sections: 1) Database, 2) Data Visualization and 
+3) Data Model.
+
+In Database section, users can access directly to the database to know how it looks like.
+As well,  users can order the data and decide how many entries they want to be displayed.
+
+In Data Visualization section, users can create some graphics from the available variables(features) on the database.They must choose  a variable for the x axis and other one for y axis using the input windows displayed.
+Moreover, if users want to deflate the public revenue(ingresos), as the theory says, they must choose the base year to do it and the app will do the operation automatically. In this case, users can use the deflated  variable to creat a graphic as well.  
+
+Finally, in Data Model section, the shiny app will display a regression model outcome between deflated public revenue and number of workers. This regression model  tests out what the theory says: the more enrolled workers at IMSS, the more public revenue the government catches.
+
+########################################################################################
+########################################################################################
+########################################################################################
+
+
+
+
